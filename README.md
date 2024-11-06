@@ -1,2 +1,4 @@
 # ProteinStructureVisualizer
-2D and 3D visualization of proteins 
+BIOEN537: Computational Systems Biology
+
+A python package designed to visualize 2D and 3D protein structures. 
