@@ -8,7 +8,7 @@ A python package designed to visualize 3D structures of monomeric proteins from 
 
 License: MIT
 
-Current version: 1.0.0
+Current version: 1.0.4
 
 Last updated: 2024-12-09
 
