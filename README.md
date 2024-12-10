@@ -52,6 +52,7 @@ This will open a window where the user can load in a PDB file (Select PDB File) 
 Please see the following photos for an example of running the GUI:
 
 ![GUI Main Window](docs/gui_main.png)
+
 *Main window of the Protein Structure Visualizer GUI*
 
 ![Point Cloud Visualization](docs/point_cloud.png)
