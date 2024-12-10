@@ -7,9 +7,7 @@ BIOEN537: Computational Systems Biology. University of Washington, Seattle.
 A python package designed to visualize 3D structures of monomeric proteins from PDB files. 
 
 License: MIT
-
-Current version: 1.0.4
-
+Current version: 1.0.6
 Last updated: 2024-12-09
 
 ## Background 
@@ -30,9 +28,15 @@ This package requires Python 3.7 or higher and the following Python packages:
 - biopandas: Handling PDB files
 - prody: Protein structure analysis
 - graphein: Protein structure graphs
-- tkinter: GUI framework
+- tkinter: GUI framework (this is a built-in Python package, so it should be installed on your system)
 
-These dependencies will be automatically installed when installing the package using pip.
+These dependencies will be automatically installed when installing the package using pip. 
+
+Please note that for Mac users with M1 or M2 chips, you may need to separately install the 'prody' package using conda. This is due to an incompatibility with the 'prody' package with M1 or M2 chips. This can be done by running the following command:
+
+```bash
+conda install -c conda-forge prody
+```
 
 To install the package, run the following command:
 
@@ -47,6 +51,11 @@ To use the GUI, run the following command:
 
 ```bash
 python -m protein_structure_visualizer
+```
+or
+
+```bash
+protein-visualizer
 ```
 
 This will open a window where the user can load in a PDB file (Select PDB File) and visualize the protein structure in 3D. The user will then see a menu with options to visualize the protein structure as an atom point cloud (View Atom Point Cloud) or a backbone graph (View 3D Backbone Graph). This will open a window in the user's default web browser displaying the selected visualization. Once the user is finished, they can exit the GUI by clicking the "x" button in the top left corner of the window. This will display a prompt asking the user if they would like to exit the application. If the user clicks "OK", the GUI will close and the application will terminate. If the user clicks "Cancel", the GUI will continue running. 
