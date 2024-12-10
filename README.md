@@ -7,7 +7,9 @@ BIOEN537: Computational Systems Biology. University of Washington, Seattle.
 A python package designed to visualize 3D structures of monomeric proteins from PDB files. 
 
 License: MIT
+
 Current version: 1.0.0
+
 Last updated: 2024-12-09
 
 ## Background 
