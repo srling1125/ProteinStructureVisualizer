@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "protein-structure-visualizer"
+version = "1.0.0"
+description = "A tool for 3D visualization of monomeric protein structures from PDB files"
+authors = [
+    {name = "Susan Ling", email = "srling@uw.edu"},
+]
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+keywords = ["protein", "structure", "visualization", "bioinformatics"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+"Homepage" = "https://github.com/srling1125/ProteinStructureVisualizer"
+
+dependencies = [
+    "pandas",
+    "plotly",
+    "networkx",
+    "biopandas",
+    "prody",
+    "graphein",
+    "tkinter"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "flake8",
+]
+
+[tool.setuptools]
+packages = ["protein_structure_visualizer"]
+
+[project.scripts]
+protein-visualizer = "protein_structure_visualizer.main:main"
